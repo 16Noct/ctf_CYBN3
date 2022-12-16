@@ -80,7 +80,7 @@ En se rendant sur la page du pokemon concerné, on remarque plusieurs informatio
 
 ![Untitled](./images/Untitled.png)
 
-On remarque que le code identifiant le pokemon dans la région de Johto ( OAC ) correspond au code ASCII (067) de la lettre C. On peut donc émettre l’hypothèse que l’information est bien cachée selon se procédé.
+On remarque que le code identifiant le pokemon dans la région de Johto ( OAC ) correspond au code ASCII (067) de la lettre C. On peut donc émettre l’hypothèse que l’information est bien cachée selon ce procédé.
 
 Pour confirmer notre hypothèse, on réitère le procédé avec le second pokemon “abra”
 
@@ -89,3 +89,32 @@ Pour confirmer notre hypothèse, on réitère le procédé avec le second pokemo
 Le code 089 correspond à la lettre “Y” dans la table ASCII. L’hypothèse se confirme.
 
 En répétant ce cheminement, on retrouve le flag :
+
+```
+granivol C
+abra Y
+empiflor B
+Poissirène N
+Snubbull {
+Héliatronc g
+Sabelette 0
+Tadmorv t
+Tadmorv t
+Insolourdo 4
+Nidoran(f) _
+Nidorino c
+Insolourdo 4
+Tadmorv t
+Nidorino c
+Noeunoeuf h
+Nidoran _
+Arbok 3
+Aéromite m
+Nidoran _
+Insolourdo 4
+Mimitoss l
+Mimitoss l
+Goupix }
+
+CYBN{g0tt4_c4tch_3m_4ll}
+```
